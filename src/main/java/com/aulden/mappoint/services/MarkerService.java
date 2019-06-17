@@ -16,4 +16,8 @@ public class MarkerService {
     public List<Marker> findAll(){
         return mr.findAll();
     }
+
+    public void create(Marker newMarker) { mr.save(newMarker); }
+
+    public void delete(Marker delMarker) { mr.delete(delMarker); }
 }
